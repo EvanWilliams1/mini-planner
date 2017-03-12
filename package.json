@@ -1,0 +1,24 @@
+{
+  "name": "mini-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run webpack",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "start:dev": "npm run webpack -- -w & nodemon --ignore dist/ --ignore src/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.1.1",
+    "webpack": "^2.2.1"
+  }
+}
